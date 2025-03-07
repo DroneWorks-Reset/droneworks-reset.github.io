@@ -649,6 +649,62 @@ body {
     content: "05"
 }
 
+.side-nav li:nth-child(6)::before {
+    content: "06"
+}
+
+.side-nav li:nth-child(7)::before {
+    content: "07"
+}
+
+.side-nav li:nth-child(8)::before {
+    content: "08"
+}
+
+.side-nav li:nth-child(9)::before {
+    content: "09"
+}
+
+.side-nav li:nth-child(10)::before {
+    content: "10"
+}
+
+.side-nav li:nth-child(11)::before {
+    content: "11"
+}
+
+.side-nav li:nth-child(12)::before {
+    content: "12"
+}
+
+.side-nav li:nth-child(13)::before {
+    content: "13"
+}
+
+.side-nav li:nth-child(14)::before {
+    content: "14"
+}
+
+.side-nav li:nth-child(15)::before {
+    content: "15"
+}
+
+.side-nav li:nth-child(16)::before {
+    content: "16"
+}
+
+.side-nav li:nth-child(17)::before {
+    content: "17"
+}
+
+.side-nav li:nth-child(18)::before {
+    content: "18"
+}
+
+.side-nav li:nth-child(19)::before {
+    content: "19"
+}
+
 .side-nav li.is-active {
     color: #0f33ff;
     -webkit-transition: color .4s ease-in-out;
@@ -1733,6 +1789,7 @@ body {
     outline: 30px solid #0f33ff
 }
 
+
 .outer-nav {
     position: absolute;
     top: 50%;
@@ -1747,8 +1804,24 @@ body {
     text-align: center;
     visibility: hidden;
     -webkit-transition: visibility 0s .2s;
-    transition: visibility 0s .2s
+    transition: visibility 0s .2s;
+
+    /* Scrollable styles */
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
 }
+
+/* Hide scrollbar for WebKit browsers */
+.outer-nav::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 .outer-nav.is-vis {
     visibility: visible
